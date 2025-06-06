@@ -41,7 +41,7 @@ app.put("/teas/:id", (req, res) => {
   const { name, price } = req.body;
   tea.name = name;
   tea.price = price;
-  req.status(200).send(tea);
+  res.status(200).send(tea);
 });
 
 //delete the tea
